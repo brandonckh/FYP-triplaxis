@@ -1,0 +1,38 @@
+.boxed {
+  display: flex;
+  margin: 4rem auto;
+  min-width: 40em;
+  max-width: 50em;
+  background-color: #FFFFFF;
+  box-shadow: 3px 3px 4px 0px #00000052;
+  padding: .5em 1em;
+  
+  
+}
+.tile{
+  background-size: cover;
+  background-image:url("pexels-photo-189349.jpeg");  
+  background-blend-mode: exclusion;
+}
+
+.min-form-width{
+  min-width: 24em;
+}
+img{
+  padding-left: 4em;
+  border-left: 1px solid #030;
+}
+body {
+  background-color:#ccd;
+}
+
+@media (max-width: 679px) {
+  .boxed {
+    box-shadow: 3px 3px 4px 0px #00000052;
+  }
+}
+@media (min-width: 680px) {
+  .boxed {
+    box-shadow: 3px 3px 4px 0px #00000052;
+  } 
+}
