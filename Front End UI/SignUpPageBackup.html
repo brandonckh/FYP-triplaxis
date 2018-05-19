@@ -5,9 +5,8 @@
 </head>
 <body class="body-padding">
 	
-
-
 <h1>Create your account here!</h1>
+
 <form>
   <div class="row">
     <div class="col">
@@ -25,11 +24,7 @@
   <div class="row">
     <div class="col">
     	<label for="Email">E-mail Address</label>
-      <input type="email" class="form-control" placeholder="E-mail Address"> <!--
-      <input type="email" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
-        <div class="invalid-feedback">
-          Please include "@".  
-        </div>. --> <!-- /////javascript onerror///// -->
+      <input type="email" class="form-control" placeholder="First name">
     </div>
     <div class="col">
     	<label for="hpnumber">Mobile Number</label>
@@ -42,7 +37,7 @@
   <div class="row">
     <div class="col">
     	<label for="password1">Password</label>
-      <input type="password" class="form-control" placeholder="Password">
+      <input type="text" class="form-control" placeholder="Password">
       <small id="passwordHelpInline" class="text-muted">
       Must be 8-20 characters long.
   	  </small>
@@ -50,25 +45,64 @@
 
    <div class="col">
     	<label for="confirmpassword1">Confirm Password</label>
-      <input type="password" class="form-control" placeholder="Confirm Password">
+      <input type="text" class="form-control" placeholder="Confirm Password">
       <small id="passwordHelpInline" class="text-muted">
       Must be 8-20 characters long.</small>
     </div>
   </div>
 </form>
+
+<form>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="House Number, Block Name, Street">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>W.Persekutuan</option>
+        <option>Selangor</option>
+        <option>Penang</option>
+        <option>Johor</option>
+        <option>Perak</option>
+        <option>Melaka</option>
+        <option>Kedah</option>
+        <option>Pahang</option>
+        <option>Kelantan</option>
+        <option>Terengganu</option>
+        <option>N.Sembilan</option>
+        <option>Perlis</option>
+        <option>Sabah</option>
+        <option>Sarawak</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
   
   <div class="form-group">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" id="gridCheck">
       <label class="form-check-label" for="gridCheck">
-        I want to receive exclusive offers and promotions from Triplaxis
+        Agree on the Terms & Conditions
       </label>
       <br>
       <input class="form-check-input" type="checkbox" id="gridCheck">
       <label class="form-check-label" for="gridCheck">
-        Agree on the <a href="termsandconditions.html">Terms & Conditions</a>        
+        I want to receive exclusive offers and promotions from Triplaxis
       </label>
-
     </div>
   </div>
   <button type="submit" class="btn btn-primary">Sign Up Now!</button>

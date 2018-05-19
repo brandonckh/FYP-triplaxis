@@ -6,9 +6,12 @@
   background-color: #FFFFFF;
   box-shadow: 3px 3px 4px 0px #00000052;
   padding: .5em 1em;
-  
-  
 }
+
+.body-padding{
+  padding: 1em 2em;
+}
+
 .tile{
   background-size: cover;
   background-image:url("pexels-photo-189349.jpeg");  
@@ -18,11 +21,11 @@
 .min-form-width{
   min-width: 24em;
 }
-img{
+.login-img{
   padding-left: 4em;
   border-left: 1px solid #030;
 }
-body {
+.grey {
   background-color:#ccd;
 }
 
