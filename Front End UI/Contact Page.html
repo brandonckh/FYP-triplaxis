@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>Contact Page</title>
+  </head>
+  <body>
+  <form class="needs-validation" novalidate>
+  <div class="container" style=background:grey>
+  	<h1>Contact Us</h1>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">First name:</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
+      <div class="invalid-feedback">
+      	First name is required.
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Last name:</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
+      <div class="invalid-feedback">
+      Last name is required.      
+      </div>
+    </div>
+	<div class="col-md-4 mb-3">
+	<p class="text-right"><h3>Our Website</h3></p>
+	<a href="#" class="text-light bg-dark">www.triplaxis.com</a>
+	<p class="text-right"><h3>General Support</h3></p>
+	<a href="#" class="text-light bg-dark">vincentlim@triplaxis.com </a>
+	<a href="#" class="text-light bg-dark">simonechong@triplaxis.com</a>	
+	</div>
+   </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Email:</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="abc@hotmail.com" required>
+      <div class="invalid-feedback">
+        Please provide a valid email.
+      </div>
+    </div>
+ 	</div>
+   <div class="form-row">
+     <div class="col-md-6 mb-3">
+      <label for="validationCustom04">Phone Number:</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="+60123456789" required>
+      <div class="invalid-feedback">
+      </div>
+    </div>
+   </div>
+   <div class="form-row">
+    <div class="col-md-12 mb-3">
+      <label for="validationCustom05">Message:</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="Enter your message here" required>
+      <div class="invalid-feedback">
+        Please enter your message here.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
