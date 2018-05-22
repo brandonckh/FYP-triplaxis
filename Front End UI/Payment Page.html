@@ -66,7 +66,7 @@
 		</div>
 	</div>	
 	<button class="btn btn-success pull-left btn-fyi " type="continue shopping">CONTINUE SHOPPING</button>
-	<button class="btn btn-success pull-right btn-fyi " type="checkout">PROCEED TO CHECKOUT</button>
+	<button class="btn btn-success pull-right btn-fyi need-validation" type="submit">PROCEED TO CHECKOUT</button>
 </div>
 </form>
 <script>
@@ -75,7 +75,7 @@
   window.addEventListener('load', function() {
     var forms = document.getElementsByClassName('needs-validation');
     var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('checkout', function(event) {
+      form.addEventListener('submit', function(event) {
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
