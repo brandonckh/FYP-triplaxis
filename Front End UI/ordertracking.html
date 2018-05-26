@@ -1,0 +1,72 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="custom.css">
+</head>
+<body class="body-padding">
+
+<h1>Track My Order</h1>
+
+<!-- 
+table of status
+	1. Product ID
+	2. Product Name
+	3. Date
+	4. Invoice No.
+	5. Order Status (Not processed, printed, delivered, received)
+	6. Tracking Number (N/A , 1234567890)
+-->
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Product ID</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Date</th>
+      <th scope="col">Invoice No.</th>
+      <th scope="col">Order Status</th>
+      <th scope="col">Tracking No.</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1 </th>
+      <td>123123123</td>
+      <td>Supreme iPhone X Phone Casing</td>
+      <td>25/5/2018</td>
+      <td>inv1010</td>
+      <td>Not Processed</td>
+      <td>EF 00 614 486 4MY</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>123123111</td>
+      <td>Men's Bvlgari Wallet</td>
+      <td>@fat</td>
+      <td>inv1011</td>
+      <td>Delivered</td>
+      <td>EF 00 613 386 3MY</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">123123222</td>
+      <td>@twitter</td>
+      <td>inv1012</td>
+      <td>Printed</td>
+      <td>EF 00 612 286 2MY</td>
+    </tr>
+  </tbody>
+</table>
+
+<small id="track1" class="text-muted">
+      Copy the Tracking Number and check delivery status <a href="https://www.poslaju.com.my/track-trace-v2/">HERE
+  	  </a>.</small>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
