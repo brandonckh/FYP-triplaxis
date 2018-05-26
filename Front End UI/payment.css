@@ -36,12 +36,9 @@
 	transition: all 0.5s;
 }
 
-.paymentWrap .paymentBtnGroup .paymentMethod .method.visa {
-	background-image:url("visa.jpg")
+.paymentWrap .paymentBtnGroup .paymentMethod .method.creditdebit {
+	background-image:url("creditdebit.png")
 	
-}
-.paymentWrap .paymentBtnGroup .paymentMethod .method.master-card {
-	background-image:url("mastercard.png")
 }
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method.paypal {
