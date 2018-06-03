@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>Shopping cart page</title>
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th><h3>Your Cart</h3></th>
+                        <th>Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Total</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sm-8 col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="https://3dexport.com/items/2016/07/27/417884/131601/hospital_bed_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_1560291.jpg" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">3D model sample</a></h4>                                  
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>							
+							<label class="form-check-label" for="invalidCheck">
+								White Strong & Flexible
+							</label>			
+                            </div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>							
+							<label class="form-check-label" for="invalidCheck">
+								Print it Anyway  <a href="#">What's this?</a>
+							</label>			
+                            </div>
+                        </div>
+						</td>
+                        <td class="col-sm-1 col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="4">
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>RM50.00</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>RM200.00</strong></td>
+                        <td class="col-sm-1 col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+						
+                    </tr>
+                    <tr>
+                        <td class="col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="https://img1.cgtrader.com/items/636647/02dc3711da/pipe-organ-3d-model-obj-3ds-fbx-blend-dae-mtl.jpg" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">3D model 101</a></h4>        
+                           <div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>							
+							<label class="form-check-label" for="invalidCheck">
+								White Strong & Flexible
+							</label>			
+                            </div>
+						   <div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+								<label class="form-check-label" for="invalidCheck">
+								Print it Anyway <a href="#">What's this?</a>
+								</label>					
+							</div>
+                            </div>
+                        </div></td>
+                        <td class="col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="3">
+                        </td>
+                        <td class="col-md-1 text-center"><strong>RM60.00	</strong></td>
+                        <td class="col-md-1 text-center"><strong>RM180.00</strong></td>
+                        <td class="col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>                 
+					</tr>
+					<tr>
+                        <td colspan="3" rowspan="6">   </td>
+                        <td colspan="2" style="background-color:lightgrey"><h5>Order Summary:</h5></td>
+					</tr>
+                    <tr>
+                        <td  style="background-color:lightgrey">Subtotal:</td>
+                        <td  style="background-color:lightgrey" class="text-right">RM280.00</td>
+                    </tr>
+                    <tr>
+                        <td  style="background-color:lightgrey">Shipping Fees:</td>
+                        <td  style="background-color:lightgrey" class="text-right">RM10.00</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:lightgrey"><h5>Total Price:</h5></td>
+                        <td style="background-color:lightgrey" class="text-right"><h5><strong>RM290.00</strong></h5></td>
+                    </tr>
+					<tr>
+                        <td style="background-color:lightgrey" colspan ="2"> <form>
+						<div class="form-group">						
+						<label for="exampleInputPassword1"></label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Promode Code">												
+						<button type="button" class="btn btn-outline-dark">APPLY</button> 
+						</div>	
+						
+						</form></td> 
+						
+                    </tr>
+                    <tr>				
+                        <td style="background-color:lightgrey">
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                        </button></td>
+                        <td style="background-color:lightgrey">
+                        <button type="button" class="btn btn-success">
+                            Checkout <span class="glyphicon glyphicon-play"></span>
+                        </button></td>
+                    </tr>					
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
