@@ -1,0 +1,59 @@
+@include ('header', ['title' => 'Triplaxis | Upload Design'])
+@include ('navigation')
+<div class="body-padding">
+<h1>Upload & Sell Your Design Now</h1>
+	
+	<div>
+		<medium id="sellingdesignlable" class="text-muted">Start making money by selling your design now!</medium>
+	</div>
+<br>
+	<div>
+    	<img src="business.jpg" class="img-fluid" alt="Responsive image">
+	</div>
+<br>
+    
+    <div>
+        <h2 class="desktop"><span class="badge badge-primary">Step 1:</span> Enter Product Name </h2>
+        @php
+            $form = array(
+                (object) array(
+                    "type" => "text",
+                    "prefix" => "NONE",
+                    "Helptext" => "NONE",
+                    "label" => "Product Name",
+                ),
+                (object) array(
+                    "type" => "text",
+                    "prefix" => "MYR",
+                    "Helptext" => "Selling price of the design",
+                    "label" => "Selling Price",
+                ),
+                (object) array(
+                    "type" => "text",
+                    "prefix" => "NONE",
+                    "Helptext" => "NONE",
+                    "label" => "Category",
+                ),
+                (object) array(
+                    "type" => "text",
+                    "prefix" => "NONE",
+                    "Helptext" => "Product Description",
+                    "label" => "Description",
+                ),
+                (object) array(
+                    "type" => "text",
+                    "prefix" => "NONE",
+                    "Helptext" => "NONE",
+                    "label" => "Image",
+                ),
+                (object) array(
+                    "type" => "text",
+                    "prefix" => "NONE",
+                    "Helptext" => "*.obj or .stl only",
+                    "label" => "Model",
+                )
+            );
+            @endphp
+        @include ('form', ['form' => $form] )
+    </div>
+</div>
