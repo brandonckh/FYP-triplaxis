@@ -27,7 +27,7 @@ function increment(index){
 function decrement(index){
     return index.value > 1 ? index.value--: 0;
 }
-
+/*
 document.addEventListener('DOMContentLoaded', function(){
     for (let i = 0; i < document.getElementsByClassName("quantity").length; i++){
         document.getElementsByClassName("decrement")[i].addEventListener('mouseup', function(){ 
@@ -41,4 +41,4 @@ document.addEventListener('DOMContentLoaded', function(){
         document.getElementsByClassName("quantity")[i].addEventListener('change', function(){ sumItems() });
     }
     sumItems()
-}, false);
+}, false);*/

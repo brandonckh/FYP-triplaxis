@@ -11,6 +11,9 @@
 | contains the "web" middleware group. Now create something great!
 |
  */
+Route::get('test-userpage', function(){
+    return view('management');
+});
 Route::get('upload-prod', function(){
     return view('upload-product');
 });
