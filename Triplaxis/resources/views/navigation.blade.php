@@ -7,37 +7,12 @@
         ),
         (object)array(
             'data' => '#',
-            'text' => '------',
-            'active' => 'FALSE'
-        ),
-        (object)array(
-            'data' => '#',
             'text' => 'My Revenue',
             'active' => 'FALSE'
         ),
         (object)array(
-            'data' => '#',
-            'text' => 'Materials',
-            'active' => 'FALSE'
-        ),
-        (object)array(
-            'data' => '#',
-            'text' => 'Pilots',
-            'active' => 'FALSE'
-        ),
-        (object)array(
-            'data' => '#',
-            'text' => '------',
-            'active' => 'FALSE'
-        ),
-        (object)array(
-            'data' => '#',
-            'text' => 'Forums',
-            'active' => 'FALSE'
-        ),
-        (object)array(
-            'data' => '#',
-            'text' => '------',
+            'data' =>  url('order'),
+            'text' => 'Track My Order',
             'active' => 'FALSE'
         ),
         (object)array(
@@ -46,8 +21,8 @@
             'active' => 'FALSE'
         ),
         (object)array(
-            'data' =>  url('order'),
-            'text' => 'Track My Order',
+            'data' => '#',
+            'text' => '------',
             'active' => 'FALSE'
         ),
     );

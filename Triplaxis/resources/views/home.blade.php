@@ -37,7 +37,7 @@
                 @else
                     <div class="carousel-item">
                 @endif
-                    <img class="d-block w-100" src="{{ asset( 'img/' . $slider-> src ) }}" alt="{{ $slider->alt }}">
+                    <img class="d-block w-100" src="{{ asset( 'public/img/' . $slider-> src ) }}" alt="{{ $slider->alt }}">
                 </div>
             @endforeach
   		</div>
@@ -95,7 +95,7 @@
     <div class="product-roll">
     @foreach ($productdata as $pdata)
     <div class="card material-scroll">
-        <img class="card-img-top" src="{{ asset('/img/'. $pdata->src) }}"></img>
+        <img class="card-img-top" src="{{ asset('/public/img/'. $pdata->src) }}"></img>
         <div class="card-body">
             <p class="card-text">{{ $pdata->text }}</p>
         </div>
@@ -109,7 +109,7 @@
     <div class="product-roll">
     @foreach ($productdata as $pdata)
     <div class="card material-scroll">
-        <img class="card-img-top" src="{{ asset('/img/'. $pdata->src) }}"></img>
+        <img class="card-img-top" src="{{ asset('/public/img/'. $pdata->src) }}"></img>
         <div class="card-body">
             <p class="card-text">{{ $pdata->text }}</p>
         </div>

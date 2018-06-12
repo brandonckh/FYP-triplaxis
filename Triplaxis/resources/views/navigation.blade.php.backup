@@ -1,0 +1,78 @@
+<div class="mobile mobile-title">
+    <div class="mobile-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <p >Triplaxis 3D Printing Studio</p>
+</div><!--
+<div class="mobile mobile-horizontal-scroll">
+    <a class="nav-item nav-link" href="#">SHOP</a>
+    <a class="nav-item nav-link" href="#">MAKE</a>
+    <a class="nav-item nav-link" href="#">SELL</a>
+    <a class="nav-item nav-link" href="#">CONNECT</a>
+</div>-->
+<nav class="navbar navbar-light desktop d-print-inline-block">
+    <a class="navbar-brand" href="{{ url('/') }}">
+        <img src="{{ asset('/public/img/comp-logo.jpeg') }}" width="70" height="70"  alt="">
+    </a>
+    <a class="nav-item nav-link" href="#">SHOP</a>
+    <a class="nav-item nav-link" href="#">MAKE</a>
+    <a class="nav-item nav-link" href="#">SELL</a>
+    <a class="nav-item nav-link" href="#">CONNECT</a>
+
+    <form class="form-inline justify-content-end">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+         <a class="navbar-brand" href="#">
+        <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="Login">
+        </a>
+         <a class="navbar-brand" href="{{ url('sign-up') }}">
+        <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="Sign-up">
+        </a>
+         <a class="navbar-brand" href="#">
+        <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+        </a>
+    </form>
+</nav>
+<hr class="desktop">
+<button type="button" class="btn btn-primary btn-sm upload mobile"></button>
+
+<nav class="navbar navbar-expand-lg navbar-light mobile">
+    <a class="nav-item nav-link active  phone-nav-button" href="#">How It Works<span class="sr-only">(current)</span></a>
+    <div class="vertical-divider phone-nav-button"></div>
+    <a class="nav-item nav-link phone-nav-button" href="#">Get Started</a>
+    <a class="nav-item nav-link phone-nav-button" href="#">My Models</a>
+    <a class="nav-item nav-link phone-nav-button" href="#">Materials</a>
+    <a class="nav-item nav-link phone-nav-button" href="#">Pilots</a>
+    <div class="vertical-divider phone-nav-button"></div>
+    <a class="nav-item nav-link phone-nav-button" href="#">Forums</a>
+    <div class="vertical-divider phone-nav-button"></div>
+    <a class="nav-item nav-link phone-nav-button" href="#">Blog</a>
+    <a class="nav-item nav-link phone-nav-button" href="#">Help</a>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light desktop">
+    <button type="button" class="btn btn-primary btn-sm upload"></button>
+    <a class="nav-item nav-link active  phone-nav-button" href="#">How It Works<span class="sr-only">(current)</span></a>
+    <div class="vertical-divider phone-nav-button"></div>
+    <a class="nav-item nav-link phone-nav-button" href="#">Get Started</a>
+    <a class="nav-item nav-link phone-nav-button" href="#">My Models</a>
+    <a class="nav-item nav-link phone-nav-button" href="#">Materials</a>
+    <a class="nav-item nav-link phone-nav-button" href="#">Pilots</a>
+    <div class="vertical-divider phone-nav-button"></div>
+    <a class="nav-item nav-link phone-nav-button" href="#">Forums</a>
+    <div class="vertical-divider phone-nav-button"></div>
+    <a class="nav-item nav-link phone-nav-button" href="#">Blog</a>
+    <a class="nav-item nav-link phone-nav-button" href="#">Help</a>
+</nav>
+<hr class="desktop">
+<!-- TODO: Make it a hamburger list
+<div>
+<a class="justify-content-end">
+  <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+  <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+  <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+</a>
+
+</div>
+-->

@@ -1,0 +1,2 @@
+@include ('man-head')
+
