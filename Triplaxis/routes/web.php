@@ -14,7 +14,7 @@
 Route::get('test-userpage', function(){
     return view('management');
 });
-Route::get('upload-prod', function(){
+Route::get('sell-your-own-design', function(){
     return view('upload-product');
 });
 Route::get('profile', function(){
@@ -35,8 +35,14 @@ Route::get('/', function () {
 Route::get('/sign-up', function() {
     return view('sign-up');
 });
-Route::get('/submission', function() {
-    return view('upload');
+Route::get('/print-your-own-design', function(){
+    return view('print-design');
+});
+Route::get('/submission-sell', function() {
+    return view('upload', ['printurl' => url('sell-your-own-design')]);
+});
+Route::get('/submission-print', function() {
+    return view('upload', ['printurl' => url('print-your-own-design')]);
 });
 Route::get('cart', function(){
     return view('cart');
@@ -65,9 +71,25 @@ Route::get('faq', function(){
 Route::get('shipping', function(){
     return view('shipping');
 });
+Route::get('/forget-password', function(){
+    return view('login',["Type" => "Forgotten"]);
+});
 Route::get('/adminLogin', function(){
     return view('login',["Type" => "Admin"]);
 });
 Route::get('/Login', function(){
     return view('login',["Type" => "User"]);
 });
+Route::post('post-reg', 'TriplaxisAuth@login');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

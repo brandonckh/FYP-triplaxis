@@ -1,3 +1,3 @@
-@include ('bottom');
-@include ('closing');
+@include ('bottom')
+@include ('closing')
 

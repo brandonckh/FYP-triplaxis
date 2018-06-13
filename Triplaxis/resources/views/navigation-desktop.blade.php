@@ -6,9 +6,9 @@
         <input style="min-width: 30em" class="form-control mr-sm-8" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
         <nav class="navbar navbar-expand-lg navbar-light desktop">
-            <a href="{{ url('submission') }}">
+            <a href="{{ url('submission-sell') }}">
             <button type="button" style="margin-right: 1em" class="nav-link btn btn-primary btn-sm upload">Sell</button></a>
-            <a><button type="button" class="nav-link btn btn-primary btn-sm upload">Print</button></a>
+            <!-- a href="{{ url('submission-print') }}" --><a><button type="button" class="nav-link btn btn-primary btn-sm upload">Print</button></a>
             @foreach ($navigationData as $nav)
                 @if ($nav->text === "------")
                     <div class="vertical-divider phone-nav-button"></div>

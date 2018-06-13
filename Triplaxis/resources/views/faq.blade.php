@@ -68,36 +68,5 @@
     <div class="row">
     @include ('topic', ['topic' => $item])
     </div>
-        <div class="row">
-          <div class="col order-first">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">How Revenue Works?</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col order-last">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">How it Works?</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
+</div>
 @include ('footer')
