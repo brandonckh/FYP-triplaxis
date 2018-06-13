@@ -19,3 +19,4 @@ yarn-error.log
 .DS_Store
 .DS_Store
 >>>>>>> ec6e632ae0552fa25d96bc8e503c02cebdf84b64
+*.zip
