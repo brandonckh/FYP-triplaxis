@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-
-=======
 /node_modules
-Triplaxis/public/.phpMyAdmin-4.8.1-all-languages.zip.icloud
-Triplaxis/public/phpMyAdmin-4.8.1-all-languages.zip
 /public/hot
 /public/storage
 /storage/*.key
@@ -18,5 +13,7 @@ yarn-error.log
 .env
 .DS_Store
 .DS_Store
->>>>>>> ec6e632ae0552fa25d96bc8e503c02cebdf84b64
-*.zip
+.DS_Store
+.DS_Store
+Front End UI/.DS_Store
+Triplaxis/public/.phpMyAdmin-4.8.1-all-languages.zip.icloud
