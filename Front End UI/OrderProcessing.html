@@ -12,14 +12,14 @@
     <div class="container">
       <h1>Order Processing Page</h1>
       <table class="table">
-        <thead class="thead-light">
+        <thead class="thead-light" align="center">
           <tr>
             <th scope="col">Order ID</th>
             <th scope="col">Item Ordered</th>
             <th scope="col">Item ID</th>
             <th scope="col">Item Name</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">File Type</th>
+            <th scope="col" width="30px">Quantity</th>
+            <th scope="col" width="100px">File Type</th>
             <th scope="col">Ordered Date</th>
             <th scope="col" >Shipping Address</th>
             <th scope="col">Actions</th>
@@ -31,7 +31,7 @@
           <tr>
             <th scope="row" rowspan="10">1000</th>
             <td>
-              <img src="triplaxis.png">
+              <img src="triplaxis.png" style="width: 100px; height: 100px;">
             </td>
             <td>
               9999
@@ -39,7 +39,9 @@
             <td>
               Triplaxes Exclusive Keychain
             </td>
-            <td>4</td>
+            <td>
+              4
+            </td>
             <td>
               .obj
             </td>
@@ -65,11 +67,19 @@
           </tr>
 
           <tr>
+            <td>
+              <img src="triplaxis.png" style="width: 100px; height: 100px;">
+            </td>
+            <td>
+              9998
+            </td>
             <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
+            <td>
+              3
+            </td>
+            <td>
+              .obj
+            </td>
             <td>
               <div class="btn-group" role="group">
                 <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -82,14 +92,27 @@
                 </div>
               </div>
             </td>
+            <td>
+              <div class="alert alert-success" role="alert">
+                Completed
+              </div>
+            </td>
           </tr>
 
           <tr>
+            <td>
+              <img src="triplaxis.png" style="width: 100px; height: 100px;">
+            </td>            
+            <td>
+              9997
+            </td>
             <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
+            <td>
+              2
+            </td>
+            <td>
+              .obj
+            </td>
             <td>
               <div class="btn-group" role="group">
                 <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -102,14 +125,27 @@
                 </div>
               </div>
             </td>
+            <td>
+              <div class="alert alert-success" role="alert">
+                Completed
+              </div>
+            </td>
           </tr>
 
           <tr>
+            <td>
+              <img src="triplaxis.png" style="width: 100px; height: 100px;">
+            </td>
+            <td>
+              9996
+            </td>
             <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
+            <td>
+              1
+            </td>
+            <td>
+              .stl
+            </td>
             <td>
               <div class="btn-group" role="group">
                 <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -120,12 +156,19 @@
                   <a class="dropdown-item" href="#">Backorder</a>
                   <a class="dropdown-item" href="#">Cancel</a>
                 </div>
+              </div>
+            </td>
+            <td>
+              <div class="alert alert-dark" role="alert">
+                Incomplete
               </div>
             </td>
           </tr>
 
         </tbody>
       </table>
+      <button type="button" class="btn btn-light" style="margin-left: 87%">Save Changes</button>
+      <button type="button" class="btn btn-primary" style="margin-left: 72%">Return to Ordering Management Page</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
