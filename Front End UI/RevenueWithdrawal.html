@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  </head>
+  <body>
+  <div class="container">
+	<div class="row">
+        <div class="span8">
+		 <h1>Withdrawal Page</h1>
+    		<form action="shipping" method="post" class="form-horizontal" id="shippingInfo" accept-charset="utf-8">
+    			<div class="control-group">
+    				<label for="withdrawal" class="control-label">	
+    				Withdrawal Amount:
+    				</label>
+    				<div class="controls">
+    					<select name="withdrawal" id="withdrawal">
+    						<option value=""></option>
+    						<option value="">RM100.00</option>
+    						<option value="">RM200.00</option>
+    						<option value="">RM300.00</option>
+    						<option value="">RM400.00</option>
+    						<option value="">RM500.00</option>
+    						<option value="">RM600.00</option>
+    						<option value="">RM700.00</option>
+    						<option value="">RM800.00</option>
+    						<option value="">RM900.00</option>
+    						<option value="">RM1000.00</option>
+    						<option value="">RM1100.00</option>
+							<option value="">RM1200.00</option>
+							<option value="">RM1300.00</option>
+							<option value="">RM1400.00</option>
+							<option value="">RM1500.00</option>
+    					</select>
+    				</div>
+					<br>
+					<label for="withdrawal" class="control-label">	
+    				Choose Your Bank:
+    				</label>
+					<div class="controls">
+    					<select name="bank" id="bank">
+    						<option value=""></option>
+							<option value="AF">Affin Bank Berhad</option>
+							<option value="AL">Alliance Bank Malaysia Berhad	</option>
+							<option value="AM">AmBank (M) Berhad</option>
+    						<option value="C">CIMB Bank Berhad</option>
+					     	<option value="HS">HSBC Bank Malaysia Berhad	</option>
+    						<option value="HO">Hong Leong Bank Berhad</option>
+							<option value="OC">OCBC Bank (Malaysia) Berhad</option>
+    						<option value="PU">Public Bank Berhad</option>
+							<option value="RH">RHB Bank Berhad</option>
+							<option value="MA">Malayan Banking Berhad</option>
+    					</select>
+    				</div>
+					<p></p>
+    			</d  <form class="px-4 py-3">
+				<div class="form-group">
+					<label for="exampleDropdownFormPassword1">Back Account No:</label>
+					<input type="address" class="form-control" id="exampleDropdownForm" placeholder="">
+				</div>
+				<div class="form-group">
+					<label for="exampleDropdownFormPassword1">Full Name:</label>
+					<input type="phoneNo" class="form-control" id="exampleDropdownForm" placeholder="">
+				</div>
+				<div class="control-group">
+    				<label for="email" class="control-label">	
+    					Email Address: 
+    				</label>
+    				<div class="controls">
+    					<input name="email" type="email" value="" id="email">
+    					<span class="help-inline">  *The invoice will send to this email</span>
+    				</div>
+    			</div>
+				<p></p>
+    			<div class="form-actions">
+    				<button type="submit" class="btn btn-large btn-primary">Saved & Confirm Withdrawal</button>
+    			</div>
+    		</form>
+    	</div>
+	</div>
+</div>
+  </body>
+  </html>
