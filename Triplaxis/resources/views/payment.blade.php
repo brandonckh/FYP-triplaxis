@@ -50,14 +50,14 @@
 		</div>
 		</div>
 		</div>
-		<div class="form-row">
+		<!--<div class="form-row">
 		<div class="col-md-5 mb-3">
 			<label for="validationCustom04">PROMO CODE</label>
 			<input type="text" class="form-control" id="validationCustom04" placeholder="" value="" required>
 			<div class="valid-feedback">			
 			</div>
 		</div>
-		</div>		
+		</div>	!-->	
 		</div>
 	</div>	
 	<a href="{{ url('successful_pay') }}"><button class="btn btn-success pull-right btn-fyi need-validation" type="button">PROCEED TO CHECKOUT</button></a>
