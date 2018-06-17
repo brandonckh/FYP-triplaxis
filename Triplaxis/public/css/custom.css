@@ -1,7 +1,34 @@
 .footer-center{
     text-align: center;
 }
+.login-menu{
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	background-color: #fff;
+	position: absolute;
+	top: 4em;
+	padding-top: 1em;
+	transition: .3s transform ease-in;
+  box-shadow: 3px 3px 4px 0px #00000052;
+	transform: scaleY(1) translateY(0em);
+}
+.login-menu-pointing{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	transform: translateY(-1.5em) translateX(1em) rotateZ(45deg);
+	background-color: #fff;
 
+}
+.highlight{
+	padding: 0px 8px;
+}
+.highlight:hover{
+	background-color: #f00
+}
+.appear{
+	transform:scaleY(0) translateY(-20em);
+}
 .boxed {
   display: flex;
   margin: 4rem auto;
@@ -10,6 +37,17 @@
   background-color: #FFFFFF;
   box-shadow: 3px 3px 4px 0px #00000052;
   padding: .5em 1em;
+}
+.fillament{
+	border-radius: 3em;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	transition: .3s transform ease-in;
+
+}
+.fillament:hover * {
+	transform: scale(1.5);
 }
 .btn-primary{
     background-color:#02508c;

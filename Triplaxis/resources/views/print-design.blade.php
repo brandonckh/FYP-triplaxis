@@ -13,180 +13,46 @@
           <div class="input-group mb-3">
               <div class="col-md-2">
                 <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Resolution</button>
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="resolutionButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Resolution</button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Low (300 Microns)</a>
-                    <a class="dropdown-item" href="#">Medium (200 Microns)</a>
-                    <a class="dropdown-item" href="#">High (100 Microns)</a>
+                    <a class="dropdown-item" onmouseup="checkRes(this);document.getElementById('resolutionButton').innerText = this.innerText" href="#" value="300">Low (300 Microns)</a>
+                    <a class="dropdown-item" onmouseup="checkRes(this);document.getElementById('resolutionButton').innerText = this.innerText" href="#" value="200">Medium (200 Microns)</a>
+                    <a class="dropdown-item" onmouseup="checkRes(this);document" href="#" value="100">High (100 Microns)</a>
                   </div>
                 </div>
               </div>
           </div>
 
-          <h5 class="mt-0">Material</h5>
-          <div class="input-group mb-3">
-              <div class="col">
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Material</button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">PLA Wood</a>
-                    <a class="dropdown-item" href="#">PLA Flex</a>
-                    <a class="dropdown-item" href="#">PLA Glow in the Dark</a>
-                  </div>
-                </div>
-              </div>
-          </div>
 
           <h5 class="mt-0">Colors</h5>
           <div class="input-group mb-3">
               <div class="col">
                 <h6>Solid Colors</h6>
-                <div class="row">
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-                </div>
-
+		@include ('fillament', ['color' => [ 'white.png', 'grey.png',  'black.png', 'skin.png' ]])
+		@include ('fillament', ['color' => [ 'lightblue.png','blue.png',  'yellow.png', 'candypink.png' ]])
+		@include ('fillament', ['color' => [ 'pink.png', 'lightgreen1.png',  'orange.png', 'brown1.png' ]])
                 <div>
-                <h6>Translucent Colors</h6>
-                <div class="row">
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-
-                  <div>
-                    <a href="">
-                      <img src="" class="" width="50" height="50" alt="">
-                    </a>
-                  </div>
-                </div>
-                </div>
-
-          <h5 class="mt-0">Quantity</h5>
+                <h6 style="margin-top:1em;">Translucent Colors</h6>
+		@include ('fillament', ['color' => [ 'clear.png', 'red.png',  'gold.png', 'purple.png' ]])
+		@include ('fillament', ['color' => [ 'blue1.png', 'green.png',  'lightgreen2.png', 'yellow1.png' ]])
+		<h6 class="hide-for-200" style="margin-top:1em;">Special Material</h6>
+		<div class="hide-for-200">
+		@include ('fillament', ['color' => [ 'PLAwood.png', 'PLAflex.png',  'PLAglow.png' ]])</div>
+                </div></div>
+	</div>
+          <h5 class="mt-0" style="margin-top:1em;">Quantity</h5>
           <div class="input-group mb-3">
-            <div>
+            <div style="display: flex">
               <button id="minus" class="btn btn-outline-secondary" type="button">-</button>
-              <input id="number" type="number" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+              <input style=" width:3em" value="1" disabled id="number" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
               <button id="plus" class="btn btn-outline-secondary" type="button">+</button>
             </div>
           </div>
 
-          <h5 id="pyod_price" class="mt-0">Price</a>
+          <h5 id="pyod_price" class="mt-0">Price (MYR)</a>
           <div class="input-group mb-3">
             <div class="">
-              <input id="number" type="number" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+              <input id="price" disabled type="number" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
             </div>
           </div>
         <button type="button" class="btn btn-primary">Add to Cart</button>
@@ -195,10 +61,28 @@
 </div>
 </div>
 </div>
-    <script>
+<script>
+function checkRes(doc) {
+	document.getElementById("resolutionButton").innerText = doc.innerText;
+	
+	let counthidden = document.getElementsByClassName("hide-for-200").length;
+	if(doc.innerText !== "Medium (200 Microns)") {
+		for (let i = 0; i < counthidden; i++){
+			document.getElementsByClassName("hide-for-200")[i].style.display = "none";
+		}
+	} else {
+		for (let i = 0; i < counthidden; i++){
+			document.getElementsByClassName("hide-for-200")[i].style.display = "";
+		}
+	}
+}
       document.getElementById("minus").addEventListener("click", function()
-      {
-        document.getElementById("number").value--;
+      {	
+	if (document.getElementById("number").value > 2) {
+		document.getElementById("number").value--;
+	} else {
+		document.getElementById("number").value = 1;
+	}
       })
       document.getElementById("plus").addEventListener("click", function()
       {

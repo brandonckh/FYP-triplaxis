@@ -1,41 +1,39 @@
 @include ('header', ['title' => 'Shopping Cart | Triplaxis'])
 @include ('navigation')
 <div class="item-group">
-    <div class="item-table"> 
-    @php
-        $form = array(
-                (object) array(
-                    "type"=>"checkbox",
-                    "prefix"=> "NONE",
-                    "Helptext" => "NONE",
-                    "label" => "White Strong & Flexible"
-                ),
-                (object) array(
-                    "type"=>"checkbox",
-                    "prefix"=> "NONE",
-                    "Helptext" => "NONE",
-                    "label" => "Print It Anyways"
-                )
-            );
-          $item = array(
-                (object) array(
-                    "modelTitle"=> "Design1",
-                    "form" => $form,
-                    "basePrice" => 50
-                ),
-                (object) array(
-                    "modelTitle"=> "Design2",
-                    "form" => $form,
-                    "basePrice" => 20
-                ),
-                (object) array(
-                    "modelTitle"=> "Design3",
-                    "form" => $form,
-                    "basePrice" => 30
-                )
-            );
-         @endphp
-     @include ('item', ['itemdata' => $item])
+    <div class="item-table" id="template-target">
+		<p id="no-item">No Items in cart</p>
+			<div class="item" style="width: 48em">
+			<div class="TEMPLATE" id="TEMPLATE" style="display:none" >
+			<div class="item" >
+			    <div class="item-image" style="background-color: #004499"></div>
+				<div class="item-index">
+				    <div class="item-nostyle">
+					<a href="#">
+					  <div id="tmp-title" class="title"></div>
+					</a>
+				    </div>
+				</div>
+				<div class="item-input">
+				   <p class="btn btn-outline-secondary decrement" style="transform: translate(-99%, 186%)">-</p> 
+				    <input type="text" class="form-control quantity" value="1">   
+				   <p class="btn btn-outline-secondary increment" style="transform: translate(136%, -186%)">+</p> 
+				</div>
+				<div class="item-price">
+				    <p>RM <span class="basePrice" id="tmp-baseprice"></span></p>
+				</div>
+				<div class="item-price">
+				    <p>RM <span class="itemTotal"></span></p>
+				</div>
+				<div class="item-price">
+				    <div class="item-nostyle">
+					<button type="button" class="btn btn-danger">
+					    <span class="glyphicon glyphicon-remove"></span> Remove
+					</button>
+				    </div>
+				</div>
+			    </div>
+			</div></div>
      </div>
     <div class="cart">
         <p>Order Summary</p>
@@ -51,10 +49,10 @@
             <p>Total Price: </p>
             <p>RM <span id="grandtotal">0.00</span></p>
         </div>
-        <div class="index">
+        <!--div class="index">
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Promotion Code" />
             <button type="button" class="btn-btn-outline-dark"> APPLY</button>
-        </div>
+        </div-->
     </div>
 </div>
 <div id="bototm">

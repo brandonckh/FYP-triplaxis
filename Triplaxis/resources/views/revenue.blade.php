@@ -23,7 +23,7 @@
 </P>
 
 <P class="text-justify">
-	2. You would have to hit a threshold of an accumulated amount of MYR 500.XX before cashing out.
+	2. You would have to hit a threshold of an accumulated amount of MYR XXX.XX before cashing out.
 </P>
 
 <P class="text-justify">

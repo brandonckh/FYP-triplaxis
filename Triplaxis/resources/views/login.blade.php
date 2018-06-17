@@ -6,9 +6,9 @@
     <div class="min-form-width">
 	@if ($Type !== "Forgotten")
 	<h2>{{ $Type }} Login</h2>
-	<form method="post" action="post-reg" style="border-right:1px solid #ddd">
+	<form method="post" action="post-log" style="border-right:1px solid #ddd">
 	@else
-	<form method="post" action="post-reg">
+	<form method="post" action="post-log">
 	@endif
 	{{ csrf_field() }}
 
@@ -17,7 +17,7 @@
 	  <div class="form-group col-8">       
             <label for="exampleInputEmail1">{{ $Type }} ID</label>
             <input type="hidden" name="type" value="{{ $Type }}" />
-            <input type="email" class="form-control" name="id" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter {{ $Type }} ID">
+            <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter {{ $Type }} Email">
             <small id="emailHelp" class="form-text text-muted">Please enter {{ $Type }} ID</small>
 	  </div>
 
@@ -29,7 +29,7 @@
 	
 	
          <div class="">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" style="margin-left: 1em;" class="btn btn-primary">Submit</button>
 	    <a  class="btn button" href="{{ url('forget-password') }}">Forgot Password</a>
           </div>
 	@else
@@ -46,25 +46,34 @@
 <div class="owo" style="margin:4em">
 <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" data-longtitle="true" data-width="253" data-height="40"></div>
 <div  style="margin: 2em 0" class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
-    <button class="btn button" >Create Account </button>
+   <a href="{{ url('sign-up') }}"> <button class="btn button btn-primary " >Create Account </button></a>
       </div>
 </div>
+<form method="post" id="google-form" action="post-google">
+	{{ csrf_field() }}
+	<input type="hidden" id="f-id" name="id" value=""/>
+	<input type="hidden" id="f-firstname" name="firstname" value=""/>
+	<input type="hidden" id="f-lastname" name="lastname" value=""/>
+	<input type="hidden" id="f-email" name="email" value=""/>
+	<input type="hidden" id="f-token" name="token" value=""/>
+</form>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script>
+<script>
+var loaded = true
+
 function onSignIn(googleUser) {
-	var data = "";
-	      var profile = googleUser.getBasicProfile();
-       data += "\nID: " + profile.getId(); // Don't send this directly to your server!
-       data += '\nFull Name: ' + profile.getName();
-      data +='\nGiven Name: ' + profile.getGivenName();
-       data += '\nFamily Name: ' + profile.getFamilyName();
-       data += "\nImage URL: " + profile.getImageUrl();
-       data +="\nEmail: " + profile.getEmail();
-console.log(data)
-       // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-      console.log("Facebook ID Token: " + id_token);
-                     };
+	if(loaded){
+		loaded = false;
+		return;
+	}
+	let profile = googleUser.getBasicProfile();
+	document.getElementById("f-id").value=profile.getId();
+	document.getElementById("f-firstname").value=profile.getGivenName();
+	document.getElementById("f-lastname").value=profile.getFamilyName();
+	document.getElementById("f-email").value=profile.getEmail();
+	document.getElementById("f-token").value=googleUser.getAuthResponse().id_token;
+	document.getElementById("google-form").submit();
+}
              </script>
 
     <script>

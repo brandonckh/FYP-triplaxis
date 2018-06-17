@@ -9,6 +9,34 @@ function sumItems(){
     subTotal();
 }
 
+function appendTmpDb(){
+	
+}
+
+function useFillament(datanodes){
+	document.getElementById("input-material").value = datanodes.name;
+	var all = document.getElementsByClassName("selection-data-nodes")
+	for (let i = 0; i < all.length; i++){
+		all[i].style="";
+	}
+	if(datanodes.style.length < 1) {
+	datanodes.style = "width:50px; height:50px; border-radius: 2em; box-shadow: 0 0 20px 2px #007bff";
+	} else {datanodes.style = ""}
+}
+1
+function toggle(doc){
+	var all = document.getElementsByClassName('login-menu');
+	for(let i = 0; i < all.length; i++){
+		all[i].className = "login-menu appear";
+	}
+
+	if(!(doc.className.match('appear'))){
+		doc.className = "login-menu appear";
+	} else {
+		doc.className = "login-menu"
+	}
+}
+
 function subTotal(){
     document.getElementById("subtotal").innerText = 0
     let ref = document.getElementsByClassName("itemTotal")
@@ -25,7 +53,7 @@ function increment(index){
 }
 
 function decrement(index){
-    return index.value > 1 ? index.value--: 0;
+    return index.value > 2 ? index.value--: 1;
 }
 /*
 document.addEventListener('DOMContentLoaded', function(){

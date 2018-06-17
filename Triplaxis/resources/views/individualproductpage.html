@@ -1,0 +1,107 @@
+@include ('header', ['title' => 'Product $ | triplaxis'])
+<h1>Triplaxis Exclusive Keychain</h1>
+      <div class="media">
+        <div class="">
+                <img class="align-self-start mr-3" alt="" width="750px" height="600px">
+                <img class="align-self-start mr-3" alt="" width="110px" height="110px">
+                <img class="align-self-start mr-3" alt="" width="110px" height="110px">
+                <img class="align-self-start mr-3" alt="" width="110px" height="110px">
+
+        </div>
+        <div class="media-body">
+
+
+
+          <h5 id="ipp_colors" class="mt-0">Colors</h5>
+          <div class="input-group mb-3">
+              <div class="col">
+
+		@include ('fillament', ['color' => [ 'white.png', 'grey.png',  'black.png', 'skin.png' ]])
+		@include ('fillament', ['color' => [ 'lightblue.png','blue.png',  'yellow.png', 'candypink.png' ]])
+		@include ('fillament', ['color' => [ 'pink.png', 'lightgreen1.png',  'orange.png', 'brown1.png' ]])
+                <div>
+                <h6 style="margin-top:1em;">Translucent Colors</h6>
+		@include ('fillament', ['color' => [ 'clear.png', 'red.png',  'gold.png', 'purple.png' ]])
+		@include ('fillament', ['color' => [ 'blue1.png', 'green.png',  'lightgreen2.png', 'yellow1.png' ]])
+		<h6 class="hide-for-200" style="margin-top:1em;">Special Material</h6>
+		<div class="hide-for-200">
+		@include ('fillament', ['color' => [ 'PLAwood.png', 'PLAflex.png',  'PLAglow.png' ]])</div>
+          </div>
+
+          <h5 id="ipp_res" class="mt-0">Resolution</a>
+          <div class="input-group mb-3">
+
+              <div class="col-md-2">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Resolution</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Low (300 Microns)</a>
+                    <a class="dropdown-item" href="#">Medium (200 Microns)</a>
+                    <a class="dropdown-item" href="#">High (100 Microns)</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <h5 id="ipp_material" class="mt-0">Material</a>
+          <div class="input-group mb-3">
+
+              <div class="col-md-2">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Material</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">PLA Wood</a>
+                    <a class="dropdown-item" href="#">PLA Flex</a>
+                    <a class="dropdown-item" href="#">PLA Glow in the Dark</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <h5 id="ipp_price" class="mt-0">Price</a>
+          <div class="input-group mb-3">
+            <div class="">
+              <input id="number" type="number" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            </div>
+          </div>
+
+          <h5 id="ipp_qty" class="mt-0">Quantity: </h5>          
+          <div class="input-group mb-3">
+            <div class="">
+              <button id="minus" class="btn btn-outline-secondary" type="button">-</button>
+              <input id="number" type="number" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+              <button id="plus" class="btn btn-outline-secondary" type="button">+</button>
+            </div>
+          </div>
+
+          <button type="button" style="margin : 1em" class="btn btn-primary">Add to Cart</button>
+      </div><!-- closing for media-body !-->
+      </div><!-- closing for media !-->
+
+      <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+          
+          <div class="col">
+            <h5 id="ipp_proname" class="mt-0">Description</h5><div class="">
+              <input type="text" class="form-control form-control">
+            </div>
+          </div><div class="col">
+            <div class="">
+              <h5 id="ipp_description" class="mt-0">Tags</h5><input type="text" class="form-control form-control">
+            </div>  
+          </div>
+
+          
+      </div>
+
+
+
+
+
+
+    </div><!-- closing for container !-->
+      
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>

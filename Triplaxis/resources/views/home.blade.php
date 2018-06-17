@@ -53,41 +53,9 @@
     @php
     $productdata = array(
             (object)array(
-                'text' => 'Some gears and stuff',
-                'src' => 'photo6073448696076412911.jpg'
+                'text' => 'Football Model',
+                'src' => '412911.jpg'
             ),
-            (object)array(
-                'text' => 'white tank',
-                'src' => 'photo6073448696076412912.jpg'
-            ),
-            (object)array(
-                'text' => 'decorative bracelet. Arm not included',
-                'src' => 'photo6073448696076412913.jpg'
-            ),
-            (object)array(
-                'text' => 'Receipt Holder',
-                'src' => 'photo6073448696076412914.jpg'
-            ),
-            (object)array(
-                'text' => 'something to do with fastening',
-                'src' => 'photo6073448696076412915.jpg'
-            ),
-            (object)array(
-                'text' => 'Seethrough Guitar',
-                'src' => 'photo6073448696076412916.jpg'
-            ),
-            (object)array(
-                'text' => 'seethrough guitar better than the previous',
-                'src' => 'photo6073448696076412917.jpg'
-            ),
-            (object)array(
-                'text' => 'Future Technical debt',
-                'src' => 'photo6073448696076412918.jpg'
-            ),
-            (object)array(
-                'text' => 'hiteous looking guitar',
-                'src' => 'photo6073448696076412919.jpg'
-            )
         )
     @endphp
 <div class="product">
@@ -103,7 +71,6 @@
     @endforeach
     </div>
     </div>
-</div>
 <div class="product">
     <p>Recent Product(Most Purchased)<a href="#">See All</a></p>
     <div class="product-roll">
@@ -117,5 +84,4 @@
     @endforeach
     </div>
     </div>
-</div>
 @include ('footer')

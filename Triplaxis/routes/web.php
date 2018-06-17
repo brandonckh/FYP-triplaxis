@@ -17,6 +17,7 @@ Route::get('test-userpage', function(){
 Route::get('sell-your-own-design', function(){
     return view('upload-product');
 });
+Route::get('product', 'TriplaxisProduct@getproduct');
 Route::get('profile', function(){
     return view('profile');
 });
@@ -62,9 +63,6 @@ Route::get('how-it-works', function(){
 Route::get('payment', function(){
     return view('payment');
 });
-Route::get('logout', function(){
-    return view('logout');
-});
 Route::get('faq', function(){
     return view('faq');
 });
@@ -77,10 +75,19 @@ Route::get('/forget-password', function(){
 Route::get('/adminLogin', function(){
     return view('login',["Type" => "Admin"]);
 });
+Route::get('/successful', function(){
+    return view('succ');
+});
+Route::get('/browse', 'TriplaxisProduct@output');
+
 Route::get('/Login', function(){
     return view('login',["Type" => "User"]);
 });
-Route::post('post-reg', 'TriplaxisAuth@login');
+Route::post('post-log', 'TriplaxisAuth@login');
+Route::post('post-reg', 'TriplaxisAuth@signup');
+Route::post('post-google', 'TriplaxisAuth@iamlogin');
+Route::post('new-product', 'TriplaxisProduct@newproduct');
+Route::get('logout', 'TriplaxisAuth@logout');
 
 Auth::routes();
 
